@@ -12,22 +12,15 @@
 
   <body>
     <nav class="navbar bg-body-tertiary bg-dark" data-bs-theme="dark">
-      <div class="container-fluid">
-        <a class="navbar-brand text-light" href="#">
-          <img
-            src="./assets/images/nav-weather.png"
-            alt="Logo"
-            width="40"
-            height="40"
-            class="d-inline-block align-text-top"
-          />
-          <span class="middle"> Weather Dashboard</span>
+      <div class="container-fluid justify-content-center">
+          <span class="d-flex justify-content-center text-light fs-1"> Weather Dashboard</span>
         </a>
       </div>
     </nav>
 
     <div class="container-fluid">
         <div class="row">
+            <!--search bar div-->
             <div class="col-md-3 bg-light min-vh-100">
                 <h4 class="mt-2">Search for a City:</h4>
                 <div class="input-group mb-3">
@@ -39,11 +32,11 @@
                     <button class="btn btn-primary" id="clear-history" type="button">Clear History</button>
                     <hr>
                 </div>
-
             </div>
-            <div class="col-md-9 ">
+            <!--todays weather div-->
+            <div class="col-md-9 d-none" id="none">
                 <div class="row">
-                    <div class="card col-md-11 m-5 bg-light">
+                    <div class="card col-md-11 m-5 bg-secondary">
                         <div>
                             <h3 class="city" id="cityName">city name </h3>
                             <img id="tempPic" src="" alt="">
@@ -55,7 +48,7 @@
                     <div class="d-flex justify-content-center">
                         <h2 class="">5-day Forecast</h2>
                     </div>
-                    
+                    <!--5 day forecast divs-->
                     <div class="d-flex justify-content-around col-md-11 m-5" id="fiveDayContainer">
                         <div class="card text-bg-light mb-3" style="max-width: 14rem;">
                             <div class="d-flex card-header justify-content-center days">Day</div>
