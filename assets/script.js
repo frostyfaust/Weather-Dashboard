@@ -35,7 +35,7 @@ function startPage() {
         ")";
       var weatherImg = data.list[weatherIndex].weather[0].icon;
       var picURL =
-        "https://openweathermap.org/img/wn/" + weatherImg + "@2x.png";
+        "http://openweathermap.org/img/wn/" + weatherImg + "@2x.png";
       var picAlt = data.list[weatherIndex].weather[0].description;
       var fahrenheit = Math.round(
         (parseFloat(data.list[weatherIndex].main.temp) - 273.15) * 1.8 + 32
@@ -62,7 +62,7 @@ function startPage() {
         weatherDate.getFullYear() +
         ")";
     var picURL =
-      "https://openweathermap.org/img/wn/" + data.weather[0].icon + "@2x.png";
+      "http://openweathermap.org/img/wn/" + data.weather[0].icon + "@2x.png";
     newPicEl.setAttribute("src", picURL);
     newPicEl.setAttribute("alt", data.weather[0].description);
     var fahrenheit = Math.round(
@@ -76,7 +76,7 @@ function startPage() {
   // grabs data through functions to render current weather & 5 day forcast
   function GrabLocalWeather(city) {
     var citySearch =
-      "https://api.openweathermap.org/data/2.5/forecast?q=" +
+      "http://api.openweathermap.org/data/2.5/forecast?q=" +
       city +
       "&appid=" +
       weatherAPIkey;
@@ -92,7 +92,7 @@ function startPage() {
       });
 
     var currentWeatherSearch =
-      "https://api.openweathermap.org/data/2.5/weather?q=" +
+      "http://api.openweathermap.org/data/2.5/weather?q=" +
       city +
       "&appid=" +
       weatherAPIkey;
