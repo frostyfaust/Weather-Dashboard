@@ -1,0 +1,12 @@
+.middle{
+    margin-left: 500px;
+    font-size: larger;
+}
+
+.bubble {
+   border-radius: 10px; 
+}
+
+.maxWidth{
+    max-width: 14rem;
+}
