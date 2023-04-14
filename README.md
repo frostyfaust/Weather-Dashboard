@@ -5,7 +5,7 @@ A weather forecast dashboard
 # Mock-up
 
 # Link to live site
-[Weather Forecast Dashboard]()
+[Weather Forecast Dashboard](https://frostyfaust.github.io/Weather-Dashboard/)
 
 ## Why I made this site
 
