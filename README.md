@@ -3,6 +3,7 @@
 A weather forecast dashboard
 
 # Mock-up
+![frostyfaust github io_Weather-Dashboard_](https://user-images.githubusercontent.com/55112932/232167619-b3363741-869f-4da0-b02a-a3a26306188f.png)
 
 # Link to live site
 [Weather Forecast Dashboard](https://frostyfaust.github.io/Weather-Dashboard/)
