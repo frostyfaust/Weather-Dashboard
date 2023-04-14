@@ -76,7 +76,7 @@ function startPage() {
   // grabs data through functions to render current weather & 5 day forcast
   function GrabLocalWeather(city) {
     var citySearch =
-      "http://api.openweathermap.org/data/2.5/forecast?q=" +
+      "https://api.openweathermap.org/data/2.5/forecast?q=" +
       city +
       "&appid=" +
       weatherAPIkey;
@@ -92,11 +92,11 @@ function startPage() {
       });
 
     var currentWeatherSearch =
-      "http://api.openweathermap.org/data/2.5/weather?q=" +
+      "https://api.openweathermap.org/data/2.5/weather?q=" +
       city +
       "&appid=" +
       weatherAPIkey;
-      
+
     fetch(currentWeatherSearch)
       .then(function (response) {
         return response.json();
